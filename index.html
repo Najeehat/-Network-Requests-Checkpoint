@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>application météo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1>Météo actuelle</h1>
+        <p>Température: 25°C</p>
+        <p>Humidité: 60%</p>
+        <p>Vent: 10 km/h</p>
+        <img src="soleil.png" alt="Soleil">
+    </div>
+    <div>
+        <h2>Prévisions à venir</h2>
+        <p>Demain: 28°C ensoleillé</p>
+        <p>Après-demain: 26°C nuageux</p>
+    </div>
+    <input type="text" id="villeInput" placeholder="Entrez le nom de la ville">
+    <button onclick="rechercherMeteo()">Rechercher</button>
+</body>
+</html>
