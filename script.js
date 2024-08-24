@@ -21,34 +21,34 @@ search.addEventListener('click',()=>{
 
         switch(json.weather[0].main){
             case'Clear':
-            image.scr = './image/clear.png';
+            image.scr = 'image/clear.png';
             break;
             case'Rain':
-            image.scr = './image/rain.png';
+            image.scr = 'image/rain.png';
             break;
             case'snow':
-            image.scr = './image/snow.png';
+            image.scr = 'image/snow.png';
             break;
             case'mist':
-            image.scr = './image/mist.png';
+            image.scr = 'image/mist.png';
             break;
             case'clouds':
-            image.scr = "./image/cloud.png";
+            image.scr = "image/cloud.png";
             break;
             case'Haze':
-            image.scr = './image/mist.png';
+            image.scr = 'image/mist.png';
             break;
             default:
-                image.src = './image/cloud.png'
+                image.src = 'image/cloud.png'
 
         }
         temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C<span>`;
         description.innerHTML = `${json.weather[0].description}`;
         humidity.innerHTML = `${json.main.humidity}%`;
         wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
-    })
+    });
 
 
 
 
-})
+});
