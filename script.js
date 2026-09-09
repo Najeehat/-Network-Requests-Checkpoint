@@ -55,10 +55,10 @@ search.addEventListener('click',()=>{
                 case'Rain':
                 image.src = 'image/rain.png';
                 break;
-                case'snow':
+                case'Snow':
                 image.src = 'image/snow.png';
                 break;
-                case'mist':
+                case'Mist':
                 image.src = 'image/mist.png';
                 break;
                 case'clouds':
@@ -71,14 +71,14 @@ search.addEventListener('click',()=>{
                     image.src = 'image/cloud.png'
     
             }
-            temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C<span>`;
+            temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
 
-            const infoWeather = document.querySelector('info-weather');
-            const infoHumidity = document.querySelector('info-humidity');
-            const infoWind = document.querySelector('info-wind');
+            const infoWeather = document.querySelector('.info-weather');
+            const infoHumidity = document.querySelector('.info-humidity');
+            const infoWind = document.querySelector('.info-wind');
 
             const elCloneInfoWeather = infoWeather.cloneNode(true);
             const elCloneInfoHumidity = infoHumidity.cloneNode(true);
